@@ -1,0 +1,10 @@
+include _button-outline
+include _header-logo
+
+header.header 
+  +header-logo
+  .header__menu 
+    a.header__menu__item(href="#") Главная
+    a.header__menu__item(href="#") Что даст обучение
+    +button-outline('#', 'Личный кабинет')(class="btn-outline")
+  

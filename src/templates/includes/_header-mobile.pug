@@ -1,0 +1,15 @@
+include _header-logo
+include _header-menu
+include _close-btn
+
+header.header-mobile 
+  .header-mobile__row 
+    +header-logo
+    .header-mobile__burger
+      img(src="assets/img/burger.png")
+  .header-mobile__collapse-overlay
+    .header-mobile__collapse
+      .header-mobile__collapse__row 
+        +header-logo
+        +close-btn
+      +header-menu

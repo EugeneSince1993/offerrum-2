@@ -1,0 +1,94 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  link(
+    href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap' 
+    rel='stylesheet')
+  link(href='assets/style.css' rel='stylesheet')
+  title Test
+
+include includes/_all
+
+body
+  .landing-page 
+    .section-1 
+      .container 
+        include includes/_header 
+        include includes/_header-mobile 
+        .showcase
+          .showcase__info 
+            h2.showcase__info__heading 
+              | Не упусти<br> возможность войти<br> в  <span>прибыльную нишу</span>
+            p.showcase__info__text 
+              | Получи все нужные навыки для заработка<br> на NFT всего за 28 дней!
+            +button-cta('#', 'Начать зарабатывать на NFT').start-earning 
+          .showcase__images 
+            .showcase__images__item.businessman 
+              img(src="assets/img/businessman.png", alt="showcase-image")
+            .showcase__images__item.pig
+              img(src="assets/img/pig.png", alt="showcase-image")
+            .showcase__images__item.smile
+              img(src="assets/img/smile.png", alt="showcase-image")
+            .showcase__images__item.money
+              img(src="assets/img/money.png", alt="showcase-image")
+            .showcase__images__item.lightning-1
+              img(src="assets/img/Lightning-1.png", alt="showcase-image")
+            .showcase__images__item.lightning-2
+              img(src="assets/img/Lightning-2.png", alt="showcase-image")            
+            .showcase__images__item.gradient--green
+              img(src="assets/img/ellipse-green.png", alt="showcase-image")
+            .gradient--violet.gradient-2
+              .gradient--violet__inner
+      .gradient--violet.gradient-1
+        .gradient--violet__inner
+    .section-2 
+      .container 
+        h3.section-2__heading Что даст тебе обучение?
+        .benefits 
+          .benefit-container
+            .benefit
+              .benefit__smile 
+                img.benefit__smile__img(src="assets/img/smile-1.png" alt="smile")
+                .shadow--yellow 
+                  .shadow--yellow__inner
+              p.benefit__text Откроешь свой первый криптокошелек и научишься с ним работать
+            .benefit-additional
+          .benefit-container
+            .benefit 
+              .benefit__smile 
+                img.benefit__smile__img(src="assets/img/smile-2.png" alt="smile")
+                .shadow--yellow 
+                  .shadow--yellow__inner
+              p.benefit__text Поймёшь, как выбирать правильные дропы
+            .benefit-additional
+          .benefit-container
+            .benefit
+              .benefit__smile 
+                img.benefit__smile__img(src="assets/img/smile-3.png" alt="smile")
+                .shadow--yellow 
+                  .shadow--yellow__inner
+              p.benefit__text Построишь план по быстрому приумножению заработанных средств
+            .benefit-additional
+          .benefit-container 
+            .benefit 
+              .benefit__smile 
+                img.benefit__smile__img(src="assets/img/smile-4.png" alt="smile")
+                .shadow--yellow 
+                  .shadow--yellow__inner
+              p.benefit__text Узнаешь кто такие холдеры и флипперы
+            .benefit-additional
+        .circle-1
+          img(src="assets/img/ellipse-violet-2.png" alt="circle")
+        .circle-2 
+          img(src="assets/img/ellipse-blue.png" alt="circle")
+        .circle-3
+          img(src="assets/img/ellipse-violet-2.png" alt="circle")
+        .gradient--violet.gradient-3
+          .gradient--violet__inner
+        .gradient--violet.gradient-4 
+          .gradient--violet__inner           
+    +modal_1
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js")
+  script(src="./assets/script.js") 

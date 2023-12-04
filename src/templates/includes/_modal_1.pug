@@ -1,0 +1,16 @@
+include _button-cta
+include _close-btn
+
+mixin modal_1
+  .modal-overlay
+    .modal
+      .modal__inner
+        h4.modal__title Начни прямо сейчас! 
+        p.modal__text Получи все нужные навыки для заработка на NFT всего за 28 дней!
+        form.modal-form 
+          .input-group.modal-form__email
+            input.input-group__input(type="email" placeholder="Ваш email")
+          +button-cta("#", "Оплатить")
+      +close-btn
+      .gradient-5
+        .gradient-5__inner
